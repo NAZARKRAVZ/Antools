@@ -1,0 +1,206 @@
+body, header{
+    font-family: Poppins;
+}
+.logo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.nav-list-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.log-reg-list-item{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.hero-list-title{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    padding-top: 104px;
+    padding-bottom: 30px;
+}
+.hero-list-desc{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    max-width: 487px;
+
+    padding-bottom: 60px;
+}
+.hero-list-button{
+    border: solid 1.5px;
+    border-radius: 8px;
+
+    max-width: 498px;
+
+    padding: 8px 0px 8px 0px;
+}
+.hero-list-button:before{
+    content: url("");
+    padding-left: 18px;
+    padding-right: 13px;
+}
+.hero-list-button-input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    padding-right: 111px;
+}
+.hero-list-button-button{ 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    padding-right: 11px;
+
+    padding: 12px 36px;
+}
+.popular-tools-title{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.popular-tools-desc{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.popular-tools-list-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.popular-tools-list-desc{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.popular-tools-list-desc-info{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.popular-tools-list-button{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.section-popular-tools-button{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+.trusted-brands-button-list-desc{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.trusted-brands-button{
+    border: selid 1px;
+    border-radius: 25px;
+}
+.newcomer-tools-list-title{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1,2;
+}
+.newcomer-tools-list-desc{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.newcomer-tools-list-button{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.newcomer-tools-apps-list-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.newcomer-tools-apps-list-desc-info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.1;
+}
+.newcomer-tools-apps-list-button{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.team-list-div-title{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.team-list-div-desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.team-list-info-div-desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.1;
+}
+.section-contributor-title{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.section-contributor-desc{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;  
+}
+.contributor-button-input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.contributor-button-button{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.footer-div-link{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.footer-div-desc-info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.footer-info-title, .footer-about-us-title, .footer-categories-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.footer-info-addres-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.footer-categories-desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.about-us-list-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
