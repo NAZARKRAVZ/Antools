@@ -35,8 +35,10 @@ header{
 .header-wrap{
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
+
+       
     .logo{
         font-size: 22px;
         font-weight: 600;
@@ -49,11 +51,8 @@ header{
         align-items: center;
     }
 
-  
 
 .nav-list{
-    margin: 0px 193px 0px 257px;
-
     display: flex;
     gap: 40px;
     align-items: center;
@@ -76,7 +75,7 @@ header{
 }
 
 .nav-list-link-categories::after{
-    content: image-set("" 1x );
+    content: image-set("");
     margin-left: 5px;
 }
 
@@ -108,9 +107,20 @@ header{
     padding: 12px 28px;
 }
 
-            
+.categories:hover .nav-list-img {
+    transform: rotate(180deg);
+}
+
+.nav-list-img{
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+
+    margin-left: 5px;
+}
+
 .section-hero{
-    background-image: url("");
+    background-image: url("./img/illustration\ home\ page\ big.png");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -144,6 +154,8 @@ header{
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
 
+
+           
 .section-hero-form{
     border: solid 1.5px;
     border-radius: 15px;
@@ -160,7 +172,7 @@ header{
 }
 
 .section-hero-form:before{
-    content: url("");
+    content: url("./img/search\ img\ for\ button.png");
     padding-left: 18px;
     padding-right: 13px;
 }
@@ -203,6 +215,8 @@ header{
 }
 
 .hero-list-div-button-img-facebook{
+    display: flex;
+    align-items: center;
     padding: 0px 10px 0px 10px;
 }
 
@@ -228,8 +242,7 @@ header{
 
     margin-bottom: 25px;
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
     color: var(--logo--home-title--all-title--selection-apps-title-color-color);
 }
@@ -242,21 +255,32 @@ header{
 
     max-width: 427px;
 
-    margin: 0 auto 90px;
+    margin: 0 auto 110px;
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
 
+          
 .popular-tools-list{
     padding-bottom: 100px;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 100px 24px;
+    gap: 100px 18px;
 }
 
 .popular-tools-list-item{
     padding: 33px;
+    width: 396px;
+    height: 298px;
+}
+
+.popular-tools-list-item:hover{
+    background-image: url(""); 
+    transform: translateY(-20px);
+    width: 396px;
+    height: 298px;
+    transition: transform 1s;
 }
 
 .popular-tools-list-title{
@@ -306,6 +330,7 @@ header{
 .popular-tools-svg{
     border: 7px;
 }
+         
 .section-popular-tools-button-wrap{
     display: flex;
     justify-content: center;
@@ -317,6 +342,8 @@ header{
 }
 
 .section-popular-tools-button{
+    display: block;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
@@ -326,13 +353,29 @@ header{
 
     padding: 17px 38px;
 
+    margin: 0 auto;
+
 
     color: var(--buttons-bg--dot--load-button-color);
     background-color: var(--page-color);
     border-color: var(--button-border-color);
 }
 
-          
+           
+.section-trusted-brands{
+    content: "";
+
+    border: solid 1px;
+    border-radius: 25px;
+    border-color: var(--brands-border-color);
+
+    background-image: url("./img/brands_background.png");
+    background-repeat: no-repeat;
+
+    max-width: 1224px;
+
+    margin: 0 auto;
+}
 
 .trusted-brands-title{
     font-size: 24px;
@@ -348,15 +391,6 @@ header{
     color: var(--trusted-brands-title-color);
 }
 
-.trusted-brands-div{
-    border: solid 1px;
-    border-radius: 25px;
-    border-color: var(--brands-border-color);
-
-    background-image: url();
-    background-repeat: no-repeat;
-}
-
 .trusted-brands-list{
     display: flex;
     justify-content: center;
@@ -365,7 +399,7 @@ header{
 
     padding-bottom: 56px;
 }
-         
+          
 .section-newcomer-tools{
     padding-top: 200px;
     padding-bottom: 200px;
@@ -379,8 +413,8 @@ header{
 .newcomer-tools-apps-list{
     display: flex;
     flex-wrap: wrap;
-
-    max-width: 600px;
+    gap: 50px 24px;
+    max-width: 638px;
 }
 
 .newcomer-tools-wrap{
@@ -388,7 +422,16 @@ header{
 }
 
 .newcomer-tools-list-item{
-    padding: 28px 21px;
+    padding: 29px 21px;
+}
+
+.newcomer-tools-list-item:hover{
+    background-image: url(""); 
+    background-repeat: no-repeat;
+    transform: translateY(-20px);
+    width: 295px;
+    height: 288px;
+    transition: transform 1s;
 }
 
 .newcomer-svg-wrap{
@@ -469,19 +512,54 @@ header{
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
-     
+           
 .newcomer-tools-apps-list-button{
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
 
     color: var(--button-text--input-tex-color);
-    background-color: var(--page-color);
+    background-color: inherit;
 }
-       
-.testimonial-list-div-div{
-    background-image: url(./img/ranaldo-richards-button-bg.png);
+
+.sign-before{
+    padding: 38px 34px;
+    background-image: url("./img/arrow-decor-img-grey.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(30, 37, 43);
+    margin-right: 107px;
+    
+}
+
+.sign-after{
+    padding: 38px 34px;
+    background-image: url("./img/arrow-decor-right-orange.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(30, 37, 43);
+    margin-left: 107px;
+}
+
+.decor-list-span{
+    width: 44px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 110, 48, 1);
+    display: inline-block;
+    
+}
+.decor-list{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 1px;
+}
+
+.section-testimonial-div{
+    display: flex;
+    align-items: center;
 }
 
 .testimonial-list-div-title{
@@ -502,18 +580,18 @@ header{
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
+  
+
 .testimonial-list-info-div-desc{
     font-size: 14px;
     font-weight: 400;
     line-height: 2.1;
     letter-spacing: 0.015em;
     text-align: left;
-
     max-width: 393px;
-    
     color: var(--nav--apps-name-color);
 
-   
+  
 }
 
 .section-contributor{
@@ -592,7 +670,7 @@ header{
     background-color: var(--buttons-bg--dot--load-button-color);
 }
            
-
+            
 .footer{
     border-top: 1px solid var(--border-top-footer);
 
@@ -604,7 +682,7 @@ header{
     display: flex;
     gap: 115px;
     margin-left: auto;
-
+   
 }
 
 .footer-wraper{
@@ -646,7 +724,7 @@ header{
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
- 
+  
 .footer-info-title, .footer-about-us-title, .footer-categories-title{
     font-size: 20px;
     font-weight: 500;
@@ -666,7 +744,7 @@ header{
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
- 
+  
 
 .footer-categories-desc{
     font-size: 16px;
@@ -675,11 +753,15 @@ header{
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
 }
-
+   
 .about-us-list-link{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
 
     color: var(--home-p--main-p--apps-info--footer-a-p-color);
+}
+
+.about-us-list-item, .footer-categories-desc, .footer-info-addres-list-item{
+    margin-bottom: 10px;
 }
